@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-align: left;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+   
+}
+ol, ul {
+	list-style: none;
+}
+
+:root {
+    --primary: gold;
+    --spacing: 4rem;
+}
+
+header{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+
+span {
+    color: var(--primary)
+}
+.button{
+    /*padding: 1rem;
+    margin-bottom: 1rem;
+    */
+    padding: 1rem;
+    display: inline-block;
+    width: max-content;
+    border: 3px solid var(--button-color);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+.about {
+    padding: var(--spacing);
+    /*background-color: var(--primary);  */  
+}
+
+h2 {
+    margin-bottom: var(--spacing);
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+.about-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.about-img {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto var(--spacing);
+    filter: grayscale(100%);
+}
+.about-img:hover {
+    filter: grayscale(0);
+}
+
+p {
+    margin-bottom: 2em;
+    line-height: 1.4em;
+}
+
+@media (min-width: 800px) {
+    .about-container {
+        display: flex;
+    }
+    article {
+        flex-direction: row;
+        max-width: 960px;
+        margin: 0 auto var(--spacing)
+    } 
+    .article-img {
+        margin-left: 2rem;
+        max-width: 350px;
+        object-fit: cover;
+    }   
+}
+.about-text {
+    margin-left: var(--spacing);
+}
+
+.button:hover {
+    color: white;
+    background-color: var(--primary);
+}
+.neutral-theme {
+    background-color: white;
+    --button-color: rebeccapurple;
+    --button-hover-color: var(--primary);
+}
+.primary-theme {
+    color:black;
+    background-color: var(--primary);
+    --button-color: rebeccapurple;
+    --button-hover-color: var(--primary)
+}
+h3 {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-img {
+    margin-bottom: 2rem;
+}
+
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    padding: var(--spacing);
+    text-align: center;
+    background-color: #000;
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing);
+}
+.social-item {
+    margin: 0 2rem;
+}
+
+.social-link {
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 0px;
+    background: no-repeat;
+    background-size: 60px;
+}
+
+.linkedin {
+    background-image: url(image/linkedin.jpg);
+}
+.twitter {
+    background-image: url(image/twitter.png);
+}
+.github {
+    background-image: url(image/github.png);
+}
